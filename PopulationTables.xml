@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<populations>
+
+  <!-- INGREDIENTS TIERS LOOT -->
+
+  <population Name="Ingredients_EarlyTiers" Load="Merge">
+      <group Name="Items" Load="Merge">
+        <object Blueprint="Gourd" Number="1-2" Weight="15"/>
+        <object Blueprint="cats_waterbottle" Number="1" Weight="10"/>
+        <object Blueprint="Oilskin" Number="1" Weight="10" />
+        <object Blueprint="Canteen" Number="1" Weight="10" />
+        <object Blueprint="Phial" Number="1" Weight="5" />
+        <object Blueprint="PlastiferJug" Number="1" Weight="1"/>
+        </group>
+    </population>
+
+    <population Name="Ingredients_MidTiers" Load="Merge">
+      <group Name="Items" Style="pickone" Weight="1">
+        <object Blueprint="PlastiferJug" Number="1" Weight="5" />
+        <object Blueprint="SteelJerrycan" Number="1" Weight="5" />
+        <object Blueprint="TenDramPhial" Number="1" Weight="1" />
+      </group>
+    </population>
+  </population>
+
+<!-- ARTIFACT LOOT -->
+
+  <population Name="Artifact 8R" Load="Merge">
+    <group Name="Items" Style="pickone">
+      <object Weight="5" Number="1" Blueprint="Baetyls_Glass"/>
+    </group>
+  </population>
+
+
+<!-- FOOD LOOT -->
+
+<population Name="Food 1" Load="Merge">
+  <group Name="Items" Style="pickone">
+    <object Weight="10" Number="1-2" Blueprint="Gourd" />
+  </group>
+</population>
+
+  <population Name="Food 6" Load="Merge">
+      <group Name="Items" Style="pickone">
+        <object Weight="1" Number="1" Blueprint="PlastiferJug" />
+      </group>
+  </population>
+
+  <population Name="Food 7" Load="Merge">
+      <group Name="Items" Style="pickone">
+        <object Weight="1" Number="1" Blueprint="SteelJerrycan" />
+      </group>
+  </population>
+
+  <population Name="Food 8" Load="Merge">
+        <group Name="Items" Style="pickone">
+          <object Weight="1" Number="1" Blueprint="ZetachromeDrumContainer" />
+        </group>
+  </population>
+
+
+<!-- UTILITY LOOT -->
+
+<population Name="Utility 1" Load="Merge">
+  <group Name="Items" Style="pickone">
+    <object Weight="20" Number="1" Blueprint="Gourd" />
+    <object Weight="5" Number="1" Blueprint="Oilskin" />
+  </group>
+</population>
+
+<population Name="Utility 2" Load="Merge">
+  <group Name="Items" Style="pickone">
+    <object Weight="20" Number="1" Blueprint="Oilskin" />
+    <object Weight="10"  Number="1" Blueprint="cats_waterbottle" />
+    <table Weight="1" Number="1" Name="Utility 3" />
+  </group>
+</population>
+
+<population Name="Utility 3" Load="Merge">
+  <group Name="Items" Style="pickone">
+      <object Weight="3" Number="1" Blueprint="PlastiferJug" />
+  </group>
+</population>
+
+<population Name="Utility 4" Load="Merge">
+  <group Name="Items" Style="pickone">
+    <object Weight="10" Number="1" Blueprint="StorageTank" />
+    <object Weight="3" Number="1" Blueprint="PlastiferJug" />
+    <object Weight="1" Number="1" Blueprint="SteelJerrycan" />
+  </group>
+</population>
+
+<population Name="Utility 5" Load="Merge">
+  <group Name="Items" Style="pickone">
+    <object Weight="5" Number="1" Blueprint="PlastiferJug" />
+    <object Weight="5" Number="1" Blueprint="SteelJerrycan" />
+  </group>
+</population>
+
+<population Name="Utility 6" Load="Merge">
+  <group Name="Items" Style="pickone">
+    <object Weight="20" Number="1" Blueprint="Phial" />
+  </group>
+</population>
+
+<population Name="Utility 7" Load="Merge">
+  <group Name="Items" Style="pickone">
+    <object Weight="5" Number="1" Blueprint="TenDramPhial" />
+  </group>
+</population>
+
+<population Name="Utility 8" Load="Merge">
+  <group Name="Items" Style="pickone">
+    <object Weight="1" Number="1" Blueprint="ZetachromeDrumContainer" />
+  </group>
+</population>
+
+<!-- SIXDAYSTILT MERCHANTS AND STUFF -->
+
+  <population Name="AppleMerchantInventory" Load="Merge">
+    <group Name="Items" Style="pickeach">
+      <object Blueprint="PlastiferJug" Number="1" />
+    </group>
+  </population>
+
+  <population Name="BeeKeeperInventory" Load="Merge">
+    <group Name="Items" Style="pickeach">
+      <object Blueprint="PlastiferJug" Number="1" />
+    </group>
+  </population>
+
+  <population Name="ApothecaryInventory" Load="Merge">
+    <group Name="Items" Style="pickeach">
+      <object Blueprint="PlastiferJug" Number="0-1" Chance="10"/>
+      <object Blueprint="SteelJerrycan" Number="1" Chance="5" />
+      <object Blueprint="Phial" Number="1" Chance="10" />
+    </group>
+  </population>
+
+  <population Name="IchorMerchantInventory" Load="Merge">
+    <group Name="Items" Load="Merge">
+      <object Blueprint="SteelJerrycan" Chance="5" Number="1" />
+  	  <object Blueprint="PlastiferJug" Chance="25" Number="1"/>
+      <object Blueprint="cats_waterbottle" Chance="100" Number="1d2"/>
+      <object Blueprint="Phial" Chance="35" Number="1" />
+  	  <object Blueprint="TenDramPhial" Chance="25" Number="1"/>
+      </group>
+  </population>
+
+  <population Name="IchorMerchantInventory_Legendary" Load="Merge">
+    <group Name="Items" Style="pickeach">
+      <object Blueprint="SteelJerrycan" Chance="100" Number="1" />
+      <object Blueprint="PlastiferJug" Chance="100" Number="1"/>
+      <object Blueprint="Random Bottle" Number="12-16" />
+      <object Blueprint="TenDramPhial" Number="2" />
+      <object Blueprint="ZetachromeDrumContainer" Chance="10" Number="1" />
+      <object Blueprint="Baetyls_Glass" Number="1" />
+    </group>
+  </population>
+
+
+  <!-- SIX DAY STILT GENERATION STUFF -->
+  <population Name="StiltAnimalPenHut" Load="Merge">
+    <group Name="Items" Style="pickeach">
+      <object Blueprint="ZetachromeDrumContainer" Number="1" />
+    </group>
+  </population>
+
+  <population Name="VintnerTentContents" Load="Merge">
+    <group Name="Contents" Style="pickeach">
+      <object Blueprint="ZetachromeDrumContainer" Number="1" Hint="AlongInsideWall" />
+    </group>
+  </population>
+
+  <population Name="ApothecaryTentContents" Load="Merge">
+    <group Name="Contents" Style="pickeach">
+      <object Blueprint="ZetachromeDrumContainer" Number="1" Hint="AlongInsideWall" />
+    </group>
+  </population>
+
+  <population Name="KipperTentContents" Load="Merge">
+    <group Name="Contents" Style="pickeach">
+      <object Blueprint="SteelJerrycan" Number="2" Hint="AlongInsideWall" />
+    </group>
+  </population>
+
+  <population Name="ChefTentContents" Load="Merge">
+    <group Name="Contents" Style="pickeach">
+    <object Blueprint="SteelJerrycan" Number="1" Hint="AlongInsideWall" />
+    <object Blueprint="ZetachromeDrumContainer" Number="1" Hint="AlongInsideWall" />
+    </group>
+  </population>
+
+  <population Name="IchorTentContents" Load="Merge">
+    <group Name="Contents" Style="pickeach">
+      <object Blueprint="SteelJerrycan" Number="2" Hint="AlongInsideWall" />
+      <object Blueprint="ZetachromeDrumContainer" Number="1" Hint="AlongInsideWall" />
+    </group>
+  </population>
+
+</populations>
