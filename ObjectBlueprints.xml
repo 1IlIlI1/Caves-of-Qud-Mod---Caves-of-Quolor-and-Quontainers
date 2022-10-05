@@ -8,8 +8,8 @@
     <part Name="Render" DisplayName="{{forest|gourd}}}" />
     <part Name="AdjustLiquidWeightWhileWorn" Factor="25" />
       <tag Name="DetailColorByLiquid" Value="k" />]b
-      <tag Name="EmptyTile" Value="Items/strapped_storage_tank_empty.png" />
-      <tag Name="FullTile" Value="Items/strapped_storage_tank_filled.png" />
+      <tag Name="EmptyTile" Value="Items/gourd_empty.png" />
+      <tag Name="FullTile" Value="Items/gourd_filled.png" />
       <tag Name="Tier" Value="0" />
   </object>
 
@@ -18,7 +18,7 @@
     <part Name="Render" DisplayName="{{B|water}}{{w|skin}}" />
       <tag Name="DetailColorByLiquid" Value="k" />
       <tag Name="EmptyTile" Value="Items/waterskin_empty.png" />
-      <tag Name="FullTile" Value="Items/container_filled.png" />
+      <tag Name="FullTile" Value="Items/waterskin_filled.png" />
   </object>
 
 <!-- Oilskin -->
@@ -26,7 +26,7 @@
     <part Name="Render" DisplayName="{{K|oil}}{{w|skin}}" />
       <tag Name="DetailColorByLiquid" Value="k" />
       <tag Name="EmptyTile" Value="Items/waterskin_empty.png" />
-      <tag Name="FullTile" Value="Items/container_filled.png" />
+      <tag Name="FullTile" Value="Items/waterskin_filled.png" />
   </object>
 
 <!-- Canteen also now has the Inorganic quality -->
@@ -55,7 +55,7 @@
     <part Name="PopulationLiquidFiller" Table="VesselLiquid_Standard" Volume="1d4" />
       <tag Name="DetailColorByLiquid" Value="k" />
       <tag Name="EmptyTile" Value="Items/strapped_storage_tank_empty.png" />
-      <tag Name="FullTile" Value="Items/strapped_s]btorage_tank_filled.png" />
+      <tag Name="FullTile" Value="Items/strapped_storage_tank_filled.png" />
     <intproperty Name="Inorganic" Value="1" />
     <tag Name="Tier" Value="3" />
   </object>
@@ -90,6 +90,7 @@
           <intproperty Name="ThermalInsulation" Value="1000" />
   </object>
 
+<!--   This is straight up from 1% Drops by Catlikespector.  I guess I should maybe ask em if it's cool I used this...  -->
   <object Name="cats_waterbottle" Inherits="WaterContainer">
     <part Name="Render" DisplayName="{{plastifer|plastifer}} flask" ColorString="&amp;y" TileColor="&amp;y" DetailColor="Y" Tile="Items/sw_canteen.png" RenderLayer="6" Occluding="false" />
     <part Name="Physics" Weight="0" Takeable="true" Solid="false" FlameTemperature="451"/>
