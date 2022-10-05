@@ -156,12 +156,12 @@
           <intproperty Name="Inorganic" Value="1" />
   </object>
 
-    <!-- Baetyl's Glass - Can store almost an infinite amount of any fluid, but is incredibly rare. If I'm being honest, best use is probably lava as it will still weigh far too much when even 1/10th full. -->
+    <!-- Baetyl's Glass - Can store almost an infinite amount of any fluid, but is incredibly rare. If I'm being honest, best use is probably lava as it will still weigh far too much when even 1/1,000,000th full. -->
   <object Name="Baetyls_Glass" Inherits="WaterContainer">
     <part Name="LiquidVolume" MaxVolume="2100000000" Volume="2100000000" StartVolume="0" InitialLiquid="" ManualSeal="true" />
     <part Name="Render" DisplayName="baetyl's glass" TileColor="&amp;Y" Tile="Items/baetyls_vial.png" />
     <part Name="Physics" Weight="-100" SpecificHeat="0" FreezeTemperature="-9999" BrittleTemperature="-9999" FlameTemperature="9999" VaporTemperature="9999" />
-    <part Name="Description" Short="A small chrome tube that's open at both ends. In the center lays a glimmering crystal seemingly suspended in thin air. It seems to rotate slowly, and upon closer inspection the crystal seems to contain the visage of countless stars. [Added by MoreStorage]" />
+    <part Name="Description" Short="A small chrome tube that's open at both ends. In the center lays a glimmering crystal seemingly suspended in thin air. It seems to rotate slowly, and upon closer inspection the crystal seems to contain the visage of countless stars." />
     <part Name="NoDamage" />
     <part Name="Commerce" Value="750" />
       <stat Name="Hitpoints" Value="1000" />
