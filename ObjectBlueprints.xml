@@ -7,7 +7,7 @@
   <object Name="Gourd" Load="Merge">
     <part Name="Render" DisplayName="{{forest|gourd}}}" />
     <part Name="AdjustLiquidWeightWhileWorn" Factor="25" />
-      <tag Name="DetailColorByLiquid" Value="k" />]b
+      <tag Name="DetailColorByLiquid" Value="k" />
       <tag Name="EmptyTile" Value="Items/gourd_empty.png" />
       <tag Name="FullTile" Value="Items/gourd_filled.png" />
       <tag Name="Tier" Value="0" />
