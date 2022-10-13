@@ -119,7 +119,7 @@
         <tag Name="Transparent" />
         <tag Name="EmptyTile" Value="Items/container_jug_empty.png" />
         <tag Name="FullTile" Value="Items/container_jug.png" />
-          <intproperty Name="Inorganic" Value="1" />g2``b
+          <intproperty Name="Inorganic" Value="1" />
   </object>
 
     <!-- Steel Jerrycan - holds 256 drams of fluid, can hold acid, but still can't hold lava. -->
