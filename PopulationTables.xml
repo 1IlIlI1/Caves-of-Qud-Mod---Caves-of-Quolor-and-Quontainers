@@ -7,7 +7,7 @@
   <population Name="Ingredients_EarlyTiers" Load="Merge">
     <group Name="Items" Style="pickone" Weight="1">
       <object Blueprint="Gourd" Number="1-2" Weight="15"/>
-      <object Blueprint="cats_waterbottle" Number="1" Weight="10"/>
+      <object Blueprint="PlastiferBottle" Number="1" Weight="10"/>
       <object Blueprint="Oilskin" Number="1" Weight="10" />
       <object Blueprint="Canteen" Number="1" Weight="10" />
       <object Blueprint="Phial" Number="1" Weight="5" />
