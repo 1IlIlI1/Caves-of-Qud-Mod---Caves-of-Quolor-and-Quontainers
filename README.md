@@ -1,2 +1,2 @@
 # Caves-of-Qud-Mod---Water-Container-Variations
-Caves of Qud mod, based on Angry Static's, and then Cantorsdust's mods of More Water Containers.
+Caves of Qud mod, based on [Angry Static's "More Fluid Storage Containers"](https://steamcommunity.com/sharedfiles/filedetails/?id=1560168385), and then [Cantorsdust's "Unofficial More Fluid Storage Containers](https://steamcommunity.com/sharedfiles/filedetails/?id=2105691877) mods of the more container type of variety mods.  This mod also color coordinates liquid type to the tiles detail color alongside also color coding the names a bit.  Also, for every container, there is a different tile for when it is empty or when it is filled of some sort of liquid.
