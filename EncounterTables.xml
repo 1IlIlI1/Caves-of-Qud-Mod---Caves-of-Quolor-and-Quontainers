@@ -40,63 +40,65 @@
 
   -->
 
-<encountertable Name="Utility 1" Density="minimum">
-  <objects>
-    <object Chance="20" Number="2d2" Blueprint="Gourd" ></object>
-    <object Chance="5" Number="1d1" Blueprint="Oilskin" ></object>
-  </objects>
-</encountertable>
+  <encountertable Name="Utility 1" Density="minimum">
+    <objects>
+      <object Chance="20" Number="2d2" Blueprint="Gourd" ></object>
+      <object Chance="5" Number="1d1" Blueprint="Oilskin" ></object>
+    </objects>
+  </encountertable>
 
-<encountertable Name="Utility 2" Density="minimum" Load="Merge">
-  <objects>
-    <object Chance="20" Number="1d1" Blueprint="Oilskin"></object>
-    <object Chance="15" Number="2d2" Blueprint="Gourd"></object>
-    <object Chance="10" Number="2d2" Blueprint="PlastiferBottle"></object>
-    <object Chance="1" Number="1d1" Blueprint="PlastiferJug"></object>
-  </objects>
-</encountertable>
+  <encountertable Name="Utility 2" Density="minimum" Load="Merge">
+    <objects>
+      <object Chance="20" Number="1d1" Blueprint="Oilskin"></object>
+      <object Chance="15" Number="2d2" Blueprint="Gourd"></object>
+      <!-- <object Chance="10" Number="2d2" Blueprint="Plastifer_Bottle"></object> -->
+      <object Chance="1" Number="1d1" Blueprint="PlastiferJug"></object>
+    </objects>
+  </encountertable>
 
-<encountertable Name="Utility 3" Density="minimum" Load="Merge">
-  <objects>
-    <object Chance="1" Number="1d1" Blueprint="Oilskin" ></object>
-    <object Chance="1" Number="1d1" Blueprint="PlastiferJug" ></object>
-    <object Chance="1" Number="1d1" Blueprint="StorageTank"></object>
-    <object Chance="1"  Number="1d1" Blueprint="PlastiferBottle" ></object>
-  </objects>
-</encountertable>
+  <encountertable Name="Utility 3" Density="minimum" Load="Merge">
+    <objects>
+      <object Chance="1" Number="1d1" Blueprint="Oilskin" ></object>
+      <object Chance="1" Number="1d1" Blueprint="PlastiferJug" ></object>
+      <object Chance="1" Number="1d1" Blueprint="StorageTank"></object>
+      <!-- <object Chance="1"  Number="1d1" Blueprint="Plastifer_Bottle" ></object> -->
+    </objects>
+  </encountertable>
 
-<encountertable Name="Utility 4" Density="minimum" Load="Merge">
-  <objects>
-    <object Chance="1" Number="1d1" Blueprint="StorageTank"></object>
-    <object Chance="1" Number="1d1" Blueprint="PlastiferJug"></object>
-    <object Chance="1" Number="1d1" Blueprint="SteelJerrycan"></object>
-  </objects>
-</encountertable>
+  <encountertable Name="Utility 4" Density="minimum" Load="Merge">
+    <objects>
+      <object Chance="1" Number="1d1" Blueprint="StorageTank"></object>
+      <object Chance="1" Number="1d1" Blueprint="PlastiferJug"></object>
+      <object Chance="1" Number="1d1" Blueprint="SteelJerrycan"></object>
+    </objects>
+  </encountertable>
 
-<encountertable Name="Utility 5" Density="minimum" Load="Merge">
-  <objects>
-    <object Chance="1" Number="1d1" Blueprint="SteelJerrycan"></object>
-    <object Chance="3" Number="1d1" Blueprint="PlastiferJug"></object>
-  </objects>
-</encountertable>
+  <encountertable Name="Utility 5" Density="minimum" Load="Merge">
+    <objects>
+      <object Chance="1" Number="1d1" Blueprint="SteelJerrycan"></object>
+      <object Chance="3" Number="1d1" Blueprint="PlastiferJug"></object>
+    </objects>
+  </encountertable>
 
-<encountertable Name="Utility 6" Density="minimum" Load="Merge">
-  <objects>
-    <object Chance="3" Number="1d3" Blueprint="Phial"></object>
-  </objects>
-</encountertable>
+  <encountertable Name="Utility 6" Density="minimum" Load="Merge">
+    <objects>
+      <object Chance="3" Number="1d3" Blueprint="Phial"></object>
+    </objects>
+  </encountertable>
 
-<encountertable Name="Utility 7" Density="minimum" Load="Merge">
-  <objects>
-    <object Chance="3" Number="2d1" Blueprint="TenDramPhial"></object>
-    <object Chance="3" Number="1d1" Blueprint="SteelJerrycan"></object>
-    <object Chance="1" Number="1d1" Blueprint="ZetachromeDrumContainer"></object>
-  </objects>
-</encountertable>
+  <encountertable Name="Utility 7" Density="minimum" Load="Merge">
+    <objects>
+      <object Chance="3" Number="2d1" Blueprint="TenDramPhial"></object>
+      <object Chance="3" Number="1d1" Blueprint="SteelJerrycan"></object>
+      <object Chance="1" Number="1d1" Blueprint="ZetachromeDrumContainer"></object>
+    </objects>
+  </encountertable>
 
-<encountertable Name="Utility 8" Density="minimum" Load="Merge">
-  <objects>
-    <object Chance="3" Number="1d1" Blueprint="ZetachromeDrumContainer"></object>
-    <object Chance="1" Number="1d1" Blueprint="Baetyls_Glass"></object>
-  </objects>
-</encountertable>
+  <encountertable Name="Utility 8" Density="minimum" Load="Merge">
+    <objects>
+      <object Chance="3" Number="1d1" Blueprint="ZetachromeDrumContainer"></object>
+      <object Chance="1" Number="1d1" Blueprint="Baetyls_Glass"></object>
+    </objects>
+  </encountertable>
+
+</encountertables>
