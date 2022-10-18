@@ -142,7 +142,7 @@
     <group Name="Items" Load="Merge">
       <object Blueprint="SteelJerrycan" Chance="5" Number="1" />
   	  <object Blueprint="PlastiferJug" Chance="25" Number="1"/>
-      <object Blueprint="PlastiferBottle" Chance="95" Number="1d2"/>
+<!--       <object Blueprint="PlastiferBottle" Chance="95" Number="1d2"/> -->
       <object Blueprint="Phial" Chance="35" Number="1" />
   	  <object Blueprint="TenDramPhial" Chance="25" Number="1"/>
       </group>
