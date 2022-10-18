@@ -92,7 +92,7 @@
   </object>
 
 <!-- Plastifer Bottle -->
-  <object Name="PlastiferBottle" Inherits="WaterContainer">
+<!--   <object Name="PlastiferBottle" Inherits="WaterContainer">
     <part Name="Render" DisplayName="{{plastifer|plastifer}} bottle" ColorString="&amp;y" TileColor="&amp;y" DetailColor="Y" Tile="Items/plastifer_bottle_empty.png" Occluding="false" />
     <part Name="Physics" Weight="0" Takeable="true" Solid="false" FlameTemperature="451"/>
     <part Name="Description" Short="A small bottle composed of thin plastifer, complete with removable lid. Not terribly sturdy, but very portable." />
@@ -107,7 +107,7 @@
       <tag Name="EmptyTile" Value="Items/plastifer_bottle_empty.png" />
       <tag Name="FullTile" Value="Items/plastifer_bottle_filled.png" />
         <intproperty Name="Inorganic" Value="1" />
-  </object>
+  </object> -->
 
     <!-- Plastifer Jerrycan - holds 128 drams of fluid, can hold acid, but not lava. -->
   <object Name="PlastiferJug" Inherits="WaterContainer">
