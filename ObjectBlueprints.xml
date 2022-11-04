@@ -62,7 +62,7 @@
 
 <!-- PHIAL OR VIAL? -->
   <object Name="Phial" Load="Merge">
-    <part Name="Render" DisplayName="{{Y|phial}}" Tile="Items/vial_filled.png" />
+    <part Name="Render" DisplayName="{{Y|phial}}" Tile="Items/phial_filled.png" />
       <tag Name="EmptyTile" Value="Items/phial_empty.png" />
       <tag Name="FullTile" Value="Items/phial_filled.png" />
   </object>
