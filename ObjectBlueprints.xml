@@ -1,37 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+
+
+<!-- CONTAINER VARIATIONS FOR LIQUIDS
+
+"FIRST OFF, THANK YOU! To Cantorsdust and Angry Static - their mods came first,
+https://steamcommunity.com/sharedfiles/filedetails/?id=1560168385
+https://steamcommunity.com/sharedfiles/filedetails/?id=2105691877
+but I wanted to learn modding, this is a result.
+All containers should show, via their tile image, whether they are filled or empty.
+Also the type of liquid should change the color of the image.
+Changed 'waterskin' to match CoQ Expanded stylizations;
+'{{B|water}}{{w|skin}}',
+'{{K|oil}}{{w|skin}}',
+'{{gaslight|canteen}}',
+'{{O|camel}} {{w|bladder}}',
+and finally phial is now '{{Y|phial}}'.  Furthermore, {{O|camel}} {{w|bladder}} now reduces the carryweight of the liquid it carries by half (changed from nothing as the part AdjustLiquidWeightWhileWorn part was not being used), and also added the barely used- if at all- 'Storage Tank' and populated it.  Added a larger 'ten dram {{Y|phial}}'.  Newly added to the game are also the rare new containers, {{plastifer|plastifer}} {{w|jug}} (128 units of liquid including acid, no lava), {{y|steel}} jerrycan (256 holding units including acid, no lava), the {{zetachrome|zetachrome}}drum barrel (1024 units including acid and lava).  Finally the Baetyls Glass, which can hold anything to 2100000000 drams." -->
+
+
+
 <objects>
 
 <!-- Technique taken from CoQ Expanded, Essentially "colors" waterskins -->
 <!-- Gourd, Tier - 0, 16 drams -->
   <object Name="Gourd" Load="Merge">
-    <part Name="Render" DisplayName="{{forest|gourd}}}" Occluding="false" />
+    <part Name="Armor" AV="1" DV="0" WornOn="Arm" />
+    <part Name="Render" DisplayName="{{forest|gourd}}" Occluding="false" />
     <part Name="AdjustLiquidWeightWhileWorn" Factor="25" />
+    <stat Name="Hitpoints" Value="6" />
+    <part Name="Commerce" Value="2.5" />
       <tag Name="DetailColorByLiquid" Value="k" />
       <tag Name="EmptyTile" Value="Items/strapped_storage_tank_empty.png" />
       <tag Name="FullTile" Value="Items/strapped_storage_tank_filled.png" />
       <tag Name="Tier" Value="0" />
+      <tag Name="Mods" Value="None" />
   </object>
 
-<!-- Waterskin, oilskin, 64 Drams...duh -->
+<!-- Waterskin, oilskin, 64 Drams. -->
   <object Name="Waterskin" Load="Merge">
     <part Name="Render" DisplayName="{{B|water}}{{w|skin}}" Occluding="false" />
+    <part Name="Commerce" Value="8.8" />
       <tag Name="DetailColorByLiquid" Value="k" />
       <tag Name="EmptyTile" Value="Items/waterskin_empty.png" />
       <tag Name="FullTile" Value="Items/container_filled.png" />
   </object>
 
-<!-- Oilskin -->
+<!-- Oilskin 64-->
   <object Name="Oilskin" Load="Merge">
     <part Name="Render" DisplayName="{{K|oil}}{{w|skin}}" Occluding="false" />
+    <part Name="Commerce" Value="10.2" />
       <tag Name="DetailColorByLiquid" Value="k" />
       <tag Name="EmptyTile" Value="Items/waterskin_empty.png" />
       <tag Name="FullTile" Value="Items/container_filled.png" />
   </object>
 
-<!-- Canteen also now has the Inorganic quality -->
+<!-- Canteen 64 also now has the Inorganic quality -->
   <object Name="Canteen" Load="Merge">
     <part Name="Render" DisplayName="{{gaslight|canteen}}" Occluding="false" />
+    <part Name="Commerce" Value="16.6" />
       <tag Name="DetailColorByLiquid" Value="k" />
       <tag Name="EmptyTile" Value="Items/canteen_empty.png" />
       <tag Name="FullTile" Value="Items/canteen_filled.png" />
@@ -42,15 +68,18 @@
   <object Name="Camel Bladder" Load="Merge">
     <part Name="Render" DisplayName="{{O|camel}} {{w|bladder}}" Occluding="false" />
     <part Name="AdjustLiquidWeightWhileWorn" Factor="50" />
+    <part Name="Commerce" Value="14.4" />
     <tag Name="DetailColorByLiquid" Value="k" />
     <tag Name="EmptyTile" Value="Items/camel_bladder_empty.png" />
     <tag Name="FullTile" Value="Items/camel_bladder_filled.png" />
   </object>
 
-<!-- Storage Tank - Tier 3 Arm Armor -->
+<!-- Storage Tank - Tier 3 Arm Armor, 128 drams -->
   <object Name="StorageTank" Load="Merge">
+    <part Name="Armor" AV="2" DV="0" WornOn="Arm" />
     <part Name="Render" DisplayName="strapped {{Y|storage tank}}" ColorString="&amp;c" DetailColor="C"   Tile="strapped_storage_tank.png" Occluding="false" />
-    <part Name="Description" Short="Chrome was molded into a canister and fastened with a brass mounting bracket. Fortunately, seems to reduce the feeling of weight by a factor of half while worn." />
+    <part Name="Commerce" Value="8.1" />
+    <part Name="Description" Short="Chrome was molded into a canister and fastened with a brass mounting bracket. The design reduces the feeling of the contained liquids weight by a factor of half while worn." />
     <part Name="AdjustLiquidWeightWhileWorn" Factor="50" />
     <part Name="PopulationLiquidFiller" Table="VesselLiquid_Standard" Volume="1d4" />
       <tag Name="DetailColorByLiquid" Value="k" />
@@ -58,25 +87,27 @@
       <tag Name="FullTile" Value="Items/strapped_s]btorage_tank_filled.png" />
     <intproperty Name="Inorganic" Value="1" />
     <tag Name="Tier" Value="3" />
+    <tag Name="Mods" Value="None" />
   </object>
 
-<!-- PHIAL OR VIAL? -->
+<!-- PHIAL OR VIAL? 1 dram -->
   <object Name="Phial" Load="Merge">
     <part Name="Render" DisplayName="{{Y|phial}}" Tile="Items/phial_filled.png" />
+    <stat Name="Commerce" Value="9.9" />
       <tag Name="EmptyTile" Value="Items/phial_empty.png" />
       <tag Name="FullTile" Value="Items/phial_filled.png" />
   </object>
 
-<!-- Ten Dram Phial Yay -->
-  <object Name="TenDramPhial" Inherits="WaterContainer">
+<!-- Ten Dram Phial Yay .... 10...drams..-->
+  <object Name="Ten Dram Phial" Inherits="WaterContainer">
     <part Name="LiquidVolume" MaxVolume="10" Volume="10" StartVolume="0" InitialLiquid="" ManualSeal="true" LiquidVisibleWhenSealed="true" />
-    <part Name="Render" DisplayName="ten dram {{Y|phial}}" ColorString="&amp;y" TileColor="&amp;y" DetailColor="k" Tile="Items/sw_vial.bmp" Occluding="false" />
+    <part Name="Render" DisplayName="ten dram {{Y|phial}}" ColorString="&amp;y" TileColor="&amp;y" DetailColor="k" Tile="Items/large_phial_filled.png" Occluding="false" />
     <part Name="Physics" SpecificHeat="0" FreezeTemperature="-9999" BrittleTemperature="-9999" FlameTemperature="99999" VaporTemperature="9999" />
     <part Name="Description" Short="A large 10 dram phial, made of glass." />
     <part Name="NoDamage" />
     <part Name="ShattersOnHit" />
-    <part Name="PopulationLiquidFiller" Table="RandomRareLiquid" Volume="1d10-1" />
-    <part Name="Commerce" Value="10" />
+    <!-- <part Name="PopulationLiquidFiller" Table="RandomRareLiquid" Volume="1d2-1" /> this is the divide by 0 for qud-->
+    <part Name="Commerce" Value="49.9" />
       <stat Name="Hitpoints" Value="1000" />
       <stat Name="HeatResistance" Value="100" />
       <stat Name="ColdResistance" Value="100" />
@@ -91,32 +122,29 @@
           <intproperty Name="ThermalInsulation" Value="1000" />
   </object>
 
-<!-- Plastifer Bottle -->
-<!--   <object Name="PlastiferBottle" Inherits="WaterContainer">
+<!-- Plastifer Bottle 16 drams-->
+  <object Name="Plastifer Bottle" Inherits="WaterContainer">
+    <part Name="LiquidVolume" StartVolume="0" MaxVolume="16" ManualSeal="true" LiquidVisibleWhenSealed="true" />
     <part Name="Render" DisplayName="{{plastifer|plastifer}} bottle" ColorString="&amp;y" TileColor="&amp;y" DetailColor="Y" Tile="Items/plastifer_bottle_empty.png" Occluding="false" />
     <part Name="Physics" Weight="0" Takeable="true" Solid="false" FlameTemperature="451"/>
-    <part Name="Description" Short="A small bottle composed of thin plastifer, complete with removable lid. Not terribly sturdy, but very portable." />
-    <part Name="LiquidVolume" StartVolume="0" MaxVolume="16" ManualSeal="true" LiquidVisibleWhenSealed="true" />
-    <part Name="Commerce" Value="8" />
+    <part Name="Description" Short="A small bottle composed of {{plastifer|plastifer}}, complete with removable lid. Not terribly sturdy, but very portable in its ability to carry up to 16 drams." />
+    <part Name="Commerce" Value="19.9" />
     <part Name="PopulationLiquidFiller" Table="VesselLiquid_Standard" Volume="1d4" />
-    <property Name="FullDetailColor" Value="y" />
-    <property Name="EmptyDetailColor" Value="K" />
       <stat Name="Hitpoints" Value="15" sValue="15" />
       <tag Name="DetailColorByLiquid" Value="k" />
-              <tag Name="Transparent" />
+      <tag Name="Transparent" />
       <tag Name="EmptyTile" Value="Items/plastifer_bottle_empty.png" />
       <tag Name="FullTile" Value="Items/plastifer_bottle_filled.png" />
         <intproperty Name="Inorganic" Value="1" />
-  </object> -->
+  </object>
 
     <!-- Plastifer Jerrycan - holds 128 drams of fluid, can hold acid, but not lava. -->
-  <object Name="PlastiferJug" Inherits="WaterContainer">
+  <object Name="Plastifer Jug" Inherits="WaterContainer">
     <part Name="LiquidVolume" MaxVolume="128" Volume="128" StartVolume="0" InitialLiquid="" ManualSeal="true" />
-    <part Name="Render" DisplayName="{{plastifer|plastifer}} {{w|jug}}" TileColor="&amp;K" DetailColor="w" Tile="Items/container_jug.png"   Occluding="false" />
-    <part Name="Description" Short="A large, lightweight plastifer container designed for storing liquids. Can hold most liquids, except the extremely hot." />
+    <part Name="Render" DisplayName="{{plastifer|plastifer}} {{w|jug}}" TileColor="&amp;K" DetailColor="w" Tile="Items/container_jug.png" Occluding="false" />
+    <part Name="Description" Short="Although slight variations in design, large and lightweight {{plastifer|plastifer}} containers that are designed for storing liquids up to 128 drams. {{Plastifer|Plastifer}} {{w|jugs}} can hold most liquids, except the extremely hot." />
     <part Name="Physics" Weight="2" />
-    <part Name="Springy" Value="0.3" />
-    <part Name="Commerce" Value="40" />
+    <part Name="Commerce" Value="139.9" />
     <part Name="PopulationLiquidFiller" Table="VesselLiquid_Standard" Volume="3d4" />
       <stat Name="Hitpoints" Value="1000" />
       <stat Name="AcidResistance" Value="100" />
@@ -128,12 +156,12 @@
   </object>
 
     <!-- Steel Jerrycan - holds 256 drams of fluid, can hold acid, but still can't hold lava. -->
-  <object Name="SteelJerrycan" Inherits="WaterContainer">
+  <object Name="Steel Jerrycan" Inherits="WaterContainer">
     <part Name="LiquidVolume" MaxVolume="256" Volume="256" StartVolume="0" InitialLiquid="" ManualSeal="true" />
-    <part Name="Render" DisplayName="{{y|steel}} jerrycan" TileColor="&amp;K" DetailColor="y" Tile="Items/container_jerrycan.png"   Occluding="false" />
-    <part Name="Description" Short="A large, metal container used to hold fluids. Even when empty, it still smells faintly of oil." />
+    <part Name="Render" DisplayName="{{Y|steel}} jerrycan" TileColor="&amp;K" DetailColor="y" Tile="Items/container_jerrycan.png"   Occluding="false" />
+    <part Name="Description" Short="A large, {{Y|steel}} container used to hold fluids in bulk, up to 256 drams. Even when empty, it smells faintly of oil." />
     <part Name="Physics" Weight="6" />
-    <part Name="Commerce" Value="50" />
+    <part Name="Commerce" Value="249.9" />
     <part Name="PopulationLiquidFiller" Table="VesselLiquid_Standard" Volume="3d4" />
       <stat Name="Hitpoints" Value="1000" />
       <stat Name="AcidResistance" Value="100" />
@@ -144,12 +172,12 @@
   </object>
 
     <!-- Barrel - holds 1024 drams of fluid, can hold acid AND lava, but is naturally heavy. (designed for long term storage inside of a players' base.) -->
-  <object Name="ZetachromeDrumContainer" Inherits="WaterContainer">
+  <object Name="Zetachrome Drum Barrel" Inherits="WaterContainer">
     <part Name="LiquidVolume" MaxVolume="1024" Volume="1024" StartVolume="0" InitialLiquid="" ManualSeal="true"  />
-    <part Name="Render" DisplayName="{{zetachrome|zetachrome}}drum barrel" TileColor="&amp;K" DetailColor="y" Tile="Items/Barrel.png" Occluding="true" />
+    <part Name="Render" DisplayName="{{zetachrome|zetachrome}} drum barrel" TileColor="&amp;K" DetailColor="y" Tile="Items/container_barrel.png" Occluding="true" />
     <part Name="Physics" Weight="40" SpecificHeat="0" FreezeTemperature="-9999" BrittleTemperature="-9999" FlameTemperature="9999" VaporTemperature="9999" />
     <part Name="Description" Short="A large metallic cylinder designed to hold bulk amounts of fluid. While covered in scratches and dents, there seems to not be any leaks. While useful, it would probably be a mistake to carry with you." />
-    <part Name="Commerce" Value="40" />
+    <part Name="Commerce" Value="1499.9" />
       <stat Name="Hitpoints" Value="1000" />
       <stat Name="HeatResistance" Value="100" />
       <stat Name="ColdResistance" Value="100" />
@@ -162,22 +190,23 @@
   </object>
 
     <!-- Baetyl's Glass - Can store almost an infinite amount of any fluid, but is incredibly rare. If I'm being honest, best use is probably lava as it will still weigh far too much when even 1/10th full. -->
-  <object Name="Baetyls_Glass" Inherits="WaterContainer">
+  <object Name="Baetyls Glass" Inherits="WaterContainer">
     <part Name="LiquidVolume" MaxVolume="2100000000" Volume="2100000000" StartVolume="0" InitialLiquid="" ManualSeal="true" />
-    <part Name="Render" DisplayName="baetyl's glass" TileColor="&amp;Y" Tile="Items/baetyls_vial.png" Occluding="false" />
-    <part Name="Physics" Weight="-100" SpecificHeat="0" FreezeTemperature="-9999" BrittleTemperature="-9999" FlameTemperature="9999" VaporTemperature="9999" />
-    <part Name="Description" Short="A small chrome tube that's open at both ends. In the center lays a glimmering crystal seemingly suspended in thin air. It seems to rotate slowly, and upon closer inspection the crystal seems to contain the visage of countless stars. [Added by MoreStorage]" />
+    <part Name="Render" DisplayName="baetyls glass" Tile="Items/baetyl_vial.png" TileColor="&amp;Y" DetailColor="y" Occluding="false" />
+    <part Name="AdjustLiquidWeightWhileWorn" Factor="95" />
+    <part Name="Physics" Weight="-1" SpecificHeat="0" FreezeTemperature="-9999" BrittleTemperature="-9999" FlameTemperature="9999" VaporTemperature="9999" />
+    <part Name="Description" Short="A small glass tube that is open at both ends. In the center lays a glimmering crystal suspended. It rotates slowly, and upon closer inspection the crystal seems to contain the visage of countless stars. The container defys gravity, ostensibly returning to the heavens?" />
     <part Name="NoDamage" />
-    <part Name="Commerce" Value="750" />
-      <stat Name="Hitpoints" Value="1000" />
+    <part Name="Commerce" Value="3499.9" />
+      <stat Name="Hitpoints" Value="1420" />
       <stat Name="HeatResistance" Value="100" />
       <stat Name="ColdResistance" Value="100" />
       <stat Name="AcidResistance" Value="100" />
       <stat Name="ElectricResistance" Value="100" />
         <tag Name="NoEffects" />
         <tag Name="DetailColorByLiquid" Value="k" />
-        <tag Name="EmptyTile" Value="Items/baetyls_vial_empty.png" />
-        <tag Name="FullTile" Value="Items/baetyls_vial.png" />
+        <tag Name="EmptyTile" Value="Items/baetyl_vial_empty.png" />
+        <tag Name="FullTile" Value="Items/baetyl_vial.png" />
         <tag Name="Transparent" />
           <intproperty Name="Inorganic" Value="1" />
   </object>

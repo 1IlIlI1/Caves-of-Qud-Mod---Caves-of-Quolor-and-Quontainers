@@ -1,0 +1,8 @@
+{
+	"id": "Container Variations For Liquids",
+	"title": "{{C|Container}} {{prismatic|Variations}} For Liquids",
+	"description": "FIRST OFF, THANK YOU! to Cantorsdust and Angry Static, their mods came first, but I wanted to learn modding, this is one result.  All containers should show via their tile image whether they are filled or empty and the type of liquid should change the color of the image.",
+	"version": "1.0.9",
+	"author": "alividlife",
+	"previewImage": "preview.png"
+}
