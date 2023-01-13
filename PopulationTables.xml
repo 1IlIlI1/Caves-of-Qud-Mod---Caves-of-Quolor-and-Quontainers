@@ -1,24 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <populations>
 
-  <!-- INGREDIENTS TIERS LOOT -->
-
   <population Name="Ingredients_EarlyTiers" Load="Merge">
-    <group Name="Items" Style="pickone" Weight="1">
-      <object Blueprint="Gourd" Number="1-2" Weight="5"/>
-      <object Blueprint="Oilskin" Number="1" Weight="2" />
-      <object Blueprint="Canteen" Number="1" Weight="2" />
-      <object Blueprint="Phial" Number="1" Weight="1" />
-      <object  Blueprint="Plastifer Jug" Number="1" Weight="1"/>
+    <group Name="Items" Style="pickone"> 
+      <object Blueprint="cats_waterbottle" Number="1" Weight="10"/> 
+      <object Blueprint="Gourd" Number="0-1" Weight="1"/>
+      <object Blueprint="Oilskin" Number="1" Weight="2"/>
+      <object Blueprint="Canteen" Number="1" Weight="2"/>
+      <object Blueprint="Plastifer Jug" Number="1" Weight="1"/>
     </group>
   </population>
 
+
   <population Name="Ingredients_MidTiers" Load="Merge">
-    <group Name="Items" Style="pickone" Weight="1">
-      <object Blueprint="Plastifer Jug" Number="0-1" Weight="1" />
-      <object Blueprint="Steel Jerrycan" Number="0-1" Weight="1" />
-      <object Blueprint="Ten Dram Phial" Number="0-1" Weight="1" />
+    <group Name="Items" Style="pickone">
+      <object Blueprint="Plastifer Jug" Number="0-1" Weight="1"/>
+      <object Blueprint="Steel Jerrycan" Number="0-1" Weight="1"/>
+      <!-- <object Blueprint="Ten Dram Phial" Number="0-1" Weight="1"/> -->
     </group>
   </population>
 
@@ -34,87 +32,88 @@
 
 <!-- FOOD LOOT -->
 
-  <population Name="Food 1" Load="Merge">
+<!--   <population Name="Food 1" Load="Merge">
     <group Name="Items" Style="pickone">
       <object Weight="1" Number="1-2" Blueprint="Gourd" />
     </group>
-  </population>
+  </population> -->
 
-  <population Name="Food 6" Load="Merge">
+<!--   <population Name="Food 6" Load="Merge">
       <group Name="Items" Style="pickone">
-        <object Weight="1" Number="0-1" Blueprint="Plastifer Jug" />
+        <object Weight="1" Number="0-1" Blueprint="Plastifer Jug"/>
       </group>
-  </population>
+  </population> -->
 
-  <population Name="Food 7" Load="Merge">
+<!--   <population Name="Food 7" Load="Merge">
       <group Name="Items" Style="pickone">
-        <object Weight="1" Number="0-1" Blueprint="Steel Jerrycan" />
+        <object Weight="1" Number="0-1" Blueprint="Steel Jerrycan"/>
       </group>
-  </population>
+  </population> -->
 
-  <population Name="Food 8" Load="Merge">
+<!--   <population Name="Food 8" Load="Merge">
         <group Name="Items" Style="pickone">
-          <object Weight="1" Number="0-1" Blueprint="Zetachrome Drum Barrel" />
+          <object Weight="1" Number="0-1" Blueprint="Zetachrome Drum Barrel"/>
         </group>
-  </population>
+  </population> -->
 
 
 <!-- UTILITY LOOT - Commented out objects are in vanilla PopulationTables.xml, and only shown so I don't mess up how many containers are spawned -->
 
   <population Name="Utility 1" Load="Merge">
     <group Name="Items" Style="pickone">
-<object Weight="20" Number="1" Blueprint="EmptyWaterskin" />
-<object Weight="5" Number="1" Blueprint="Waterskin" />
-      <object Weight="1" Number="1" Blueprint="Gourd" />
-      <object Weight="1" Number="1" Blueprint="Oilskin" />
+      <object Weight="20" Number="1" Blueprint="EmptyWaterskin"/>
+      <object Weight="5" Number="1" Blueprint="Waterskin"/>
+      <!-- <object Weight="1" Number="1" Blueprint="Gourd"/> -->
+      <object Weight="1" Number="1" Blueprint="Oilskin"/>
       <object Blueprint="Plastifer Bottle" Number="1" Weight="10"/>
     </group>
   </population>
 
   <population Name="Utility 2" Load="Merge">
     <group Name="Items" Style="pickone">
-<object Weight="20" Number="1" Blueprint="EmptyCanteen" />
-<object Weight="5" Number="1" Blueprint="Canteen" />
-      <object Weight="1" Number="1" Blueprint="Oilskin" />
-      <object Weight="1" Number="0-1" Blueprint="StorageTank" />
+      <object Weight="20" Number="1" Blueprint="Plastifer Bottle"/>
+      <object Weight="20" Number="1" Blueprint="EmptyCanteen"/>
+      <object Weight="5" Number="1" Blueprint="Canteen"/>
+      <object Weight="1" Number="1" Blueprint="Oilskin"/>
+      <object Weight="1" Number="0-1" Blueprint="StorageTank"/>
     </group>
   </population>
 
   <population Name="Utility 3" Load="Merge">
     <group Name="Items" Style="pickone">
-<object Weight="20" Number="1" Blueprint="Camel Bladder" />
-        <object Weight="10"  Number="1" Blueprint="StorageTank" />
-        <object Weight="1" Number="0-1" Blueprint="Plastifer Jug" />
+      <object Weight="20" Number="1" Blueprint="Camel Bladder"/>
+      <object Weight="10"  Number="1" Blueprint="StorageTank"/>
+      <object Weight="1" Number="0-1" Blueprint="Plastifer Jug"/>
     </group>
   </population>
 
   <population Name="Utility 4" Load="Merge">
     <group Name="Items" Style="pickone">
-      <object Weight="1" Number="0-1" Blueprint="Steel Jerrycan" />
+      <object Weight="1" Number="0-1" Blueprint="Steel Jerrycan"/>
     </group>
   </population>
 
   <population Name="Utility 5" Load="Merge">
     <group Name="Items" Style="pickone">
-      <object Weight="1" Number="0-1" Blueprint="Steel Jerrycan" />
+      <object Weight="1" Number="0-1" Blueprint="Steel Jerrycan"/>
     </group>
   </population>
 
-  <population Name="Utility 6" Load="Merge">
+  <!-- <population Name="Utility 6" Load="Merge">
     <group Name="Items" Style="pickone">
       <object Weight="8" Number="1" Blueprint="Phial" />
     </group>
-  </population>
+  </population> -->
 
-  <population Name="Utility 7" Load="Merge">
+<!--   <population Name="Utility 7" Load="Merge">
     <group Name="Items" Style="pickone">
       <object Weight="1" Number="1" Blueprint="Ten Dram Phial" />
     </group>
-  </population>
+  </population> -->
 
   <population Name="Utility 8" Load="Merge">
     <group Name="Items" Style="pickone">
-      <object Weight="1" Number="0-1" Blueprint="Zetachrome Drum Barrel" />
+      <object Weight="1" Number="0-1" Blueprint="Zetachrome Drum Barrel"/>
     </group>
   </population>
 
@@ -136,7 +135,7 @@
     <group Name="Items" Style="pickeach">
       <object Blueprint="Plastifer Jug" Number="0-1" />
       <object Blueprint="Steel Jerrycan" Number="1" Chance="2" />
-      <object Blueprint="Phial" Number="1" Chance="1" />
+      <!-- <object Blueprint="Phial" Number="1" Chance="1" /> -->
     </group>
   </population>
 
@@ -144,17 +143,19 @@
     <group Name="Items" Load="Merge">
       <object Blueprint="Steel Jerrycan"  Number="1" />
   	  <object Blueprint="Plastifer Jug"  Number="1"/>
-      <object Blueprint="Plastifer Bottle" Number="1d2"/>
-      <object Blueprint="Phial" Number="1" />
-  	  <object Blueprint="Ten Dram Phial" Number="1"/>
+      <object Blueprint="cats_waterbottle" Chance="100" Amount="1d2"/> 
+      <!-- <object Blueprint="Plastifer Bottle" Number="1d2"/> -->
+      <!-- <object Blueprint="Phial" Number="1" /> -->
+  	  <!-- <object Blueprint="Ten Dram Phial" Number="1"/> -->
       </group>
   </population>
 
   <population Name="IchorMerchantInventory_Legendary" Load="Merge">
     <group Name="Items" Style="pickeach">
+      <object Blueprint="cats_waterbottle" Chance="100" Amount="1d2"/> 
       <object Blueprint="Steel Jerrycan" Chance="100" Number="1" />
       <object Blueprint="Plastifer Jug" Chance="100" Number="1"/>
-      <object Blueprint="Ten Dram Phial" Number="2" />
+      <!-- <object Blueprint="Ten Dram Phial" Number="2" /> -->
       <object Blueprint="Zetachrome Drum Barrel" Chance="10" Number="1" />
       <object Blueprint="Baetyls Glass" Number="1"  />
     </group>
