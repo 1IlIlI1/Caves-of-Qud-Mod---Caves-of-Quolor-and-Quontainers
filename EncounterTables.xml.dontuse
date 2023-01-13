@@ -39,11 +39,26 @@
   maximum // 80
 
   -->
+  
+  <!--
+    Render Layers
+    ************************
+    7 - Overlay (Gas)
+    6 - Creature Decal (Bloodsplatter)
+    5 - Creature
+    4 - Object (Table)
+    3 - Wall Decal (Bloodsplatter)
+    2 - Wall
+    1 - Floor Decal (Liquid)
+    0 - Floor
+    ************************
+  -->
+  
 
   <encountertable Name="Utility 1" Density="minimum">
     <objects>
-      <object Chance="2" Number="2d2" Blueprint="Gourd" ></object>
       <object Chance="1" Number="1d1" Blueprint="Oilskin" ></object>
+      <object Chance="2" Number="2d2" Blueprint="Gourd" ></object>
     </objects>
   </encountertable>
 
@@ -51,7 +66,7 @@
     <objects>
       <object Chance="2" Number="1d1" Blueprint="Oilskin"></object>
       <object Chance="1" Number="2d2" Blueprint="Gourd"></object>
-      <!-- <object Chance="10" Number="2d2" Blueprint="Plastifer Bottle"></object> -->
+      <object Chance="10" Number="2d2" Blueprint="Plastifer Bottle"></object>
       <object Chance="1" Number="1d1" Blueprint="Plastifer Jug"></object>
     </objects>
   </encountertable>
@@ -82,13 +97,13 @@
 
   <encountertable Name="Utility 6" Density="minimum" Load="Merge">
     <objects>
-      <object Chance="3" Number="1d3" Blueprint="Phial"></object>
+      <!-- <object Chance="3" Number="1d3" Blueprint="Phial"></object> HAS ISSUES WITH HISTORY GENERATION AND LIQUID VESSEL FILLING (!?)-->
     </objects>
   </encountertable>
 
   <encountertable Name="Utility 7" Density="minimum" Load="Merge">
     <objects>
-      <object Chance="3" Number="2d1" Blueprint="Ten Dram Phial"></object>
+      <!-- <object Chance="3" Number="2d1" Blueprint="Ten Dram Phial"></object> HAS ISSUES WITH HISTORY GENERATION AND LIQUID VESSEL FILLING (!?)-->
       <object Chance="3" Number="1d1" Blueprint="Steel Jerrycan"></object>
       <object Chance="1" Number="1d1" Blueprint="Zetachrome Drum Barrel"></object>
     </objects>
