@@ -14,8 +14,8 @@
 
   <population Name="Ingredients_MidTiers" Load="Merge">
     <group Name="Items" Style="pickone">
-      <object Blueprint="Plastifer Jug" Number="0-1" Weight="1"/>
-      <object Blueprint="Steel Jerrycan" Number="0-1" Weight="1"/>
+      <object Blueprint="Plastifer Jug" Number="1" Weight="1"/>
+      <object Blueprint="Steel Jerrycan" Number="1" Weight="1"/>
       <!-- <object Blueprint="Ten Dram Phial" Number="0-1" Weight="1"/> -->
     </group>
   </population>

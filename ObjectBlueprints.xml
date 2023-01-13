@@ -483,7 +483,7 @@
   <object Name="Plastifer Jug" Inherits="WaterContainer">
     <part Name="LiquidVolume" MaxVolume="128" Volume="128" StartVolume="0" InitialLiquid="" ManualSeal="true" />
     <part Name="Render" DisplayName="{{plastifer|plastifer}} {{w|jug}}" TileColor="&amp;K" DetailColor="w" Tile="items/container_jug.png" Occluding="false" />
-    <part Name="Description" Short="Although slight variations in design, large and lightweight {{plastifer|plastifer}} containers that are designed for storing liquids up to 128 drams. {{Plastifer|Plastifer}} {{w|jugs}} can hold most liquids, except the extremely hot." />
+    <part Name="Description" Short="Although slight variations in design, large and lightweight {{plastifer|plastifer}} containers that are designed for storing liquids up to 128 drams. {{Plastifer|Plastifer}} {{w|jugs}} can hold most liquids, save for the extremely hot." />
     <part Name="Physics" Weight="2" />
     <part Name="Commerce" Value="139.9" />
       <stat Name="Hitpoints" Value="1000" />
