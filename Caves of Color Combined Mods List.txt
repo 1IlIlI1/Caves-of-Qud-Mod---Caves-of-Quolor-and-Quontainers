@@ -4,3 +4,6 @@ QoL Mod - recolored Stilt signs and Barathrumites    = https://steamcommunity.co
 Rabbit Baskets, QOL mod for looting                  = https://steamcommunity.com/sharedfiles/filedetails/?id=2841664373
 JakTiles                                             = https://steamcommunity.com/sharedfiles/filedetails/?id=2405138140
 JakTiles Legacy                                      = https://steamcommunity.com/sharedfiles/filedetails/?id=2779966394
+More Fluid Storage                                   = https://steamcommunity.com/sharedfiles/filedetails/?id=1560168385
+More Fluid Storage Unofficial Update                 = https://steamcommunity.com/sharedfiles/filedetails/?id=2105691877
+Caves of Quolor and Quontainers                      = https://github.com/1IlIlI1/Caves-of-Qud-Mod---Caves-of-Quolor-and-Quontainers
