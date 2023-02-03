@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <colors>
-
   <solidcolors>
     <solidcolor Name="black" Color="K" LightTone="y" ShowInPicker="true" />
     <solidcolor Name="dark blue" Color="b" LightTone="B" ShowInPicker="true" />
@@ -28,7 +27,6 @@
     <solidcolor Name="dark gray" Color="K" LightTone="y" />
     <solidcolor Name="important" Color="W" DarkTone="w" ShowInPicker="true" />
   </solidcolors>
-
   <shaders>
     <shader Name="amorous" Type="alternation" Colors="r-R-M-m" ShowInPicker="true" />
     <shader Name="arctic camouflage" Type="sequence" Colors="y-y-Y-y-K-y-y-Y-Y-K" ShowInPicker="true" />
@@ -185,5 +183,4 @@
     <shader Name="heavy" Type="alternation" Colors="c-C-c" ShowInPicker="true" />
     <shader Name="riot" Type="sequence" Colors="r-b-r-r-r-r-r-r-r-r-r-r-r-r-r-r-r-r-r-r-r-r-r-r-r-r" ShowInPicker="true" />
   </shaders>
-
 </colors>
