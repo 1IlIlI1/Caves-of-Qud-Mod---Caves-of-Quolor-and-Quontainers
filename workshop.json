@@ -1,7 +1,7 @@
 {
   "WorkshopId": 12342069,
   "Title": "{{w|CAVES OF }}{{rainbow|QUOLOR}} {{r|+}} {{prismatic|QUONTAINERS}}",
-  "Description": "Adds a splash of color to normally statically-hued objects, and reveals a few normally hidden secondary colors of tiles. Added new tiles for a few characters and things - more accurate depiction or QoL.  New liquid containers, and containers now show whether full or empty.  MANY AUTHORS = helado, Angry Static, cantorsdust, Plutovi, Jak(i), Rabbit, CatlikeSpectator, alividlife",
+  "Description": "A simple mod that adds a splash of color to normally statically-hued objects, and reveals a few normally hidden secondary colors of tiles. Added new tiles for a few characters and things.  New liquid containers, and containers now show whether full or empty. Wishes: {{R|recolor}}, {{R|looklike}}, {{R|looklikecustom}}  MANY AUTHORS = helado, Plutovi, cantorsdust, alividlife",
   "Tags": "Cosmetic, Tiles, Containers, QoL",
   "Visibility": "2",
   "ImagePath": "preview.png"
